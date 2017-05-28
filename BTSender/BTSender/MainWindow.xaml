@@ -1,0 +1,20 @@
+﻿<Window x:Class="BTSender.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:BTSender"
+		xmlns:views="clr-namespace:BTSender.Views"
+		mc:Ignorable="d"
+		Title="MainWindow" Height="443.8" Width="528.2"
+		DataContext="{Binding MainView, Source={StaticResource Locator}}">
+		<StackPanel 
+			HorizontalAlignment="Left" 
+			Height="250" 
+			Margin="10,10,10,10" 
+			VerticalAlignment="Top">
+			<StackPanel>
+				<views:SenderView x:Name="SenderView" Height="90" Margin="10,10,10,10" />
+			</StackPanel>			 
+		</StackPanel>
+</Window>
